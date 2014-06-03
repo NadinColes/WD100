@@ -21,6 +21,7 @@ body {
 	background-color: rgba(204,229,255,1);
 	border-bottom-right-radius: 300px;
 	color: black;
+	z-index: 99;
 }
 
 #sm {
@@ -83,6 +84,7 @@ nav {
 	right: 0;
 	background-color: rgba(204,229,255,1);
 	width: 150px;
+	z-index: 99;
 }
 
 nav ul {
@@ -136,6 +138,7 @@ iframe {
 	border-top-right-radius: 200px 100px;
 	border-bottom-left-radius: 200px 100px;
 	border-bottom-right-radius: 75px;
+	z-index: 98;
 }
 
 

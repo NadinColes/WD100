@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+ruby '2.1.2'
+
+gem 'sinatra'
+gem 'geocoder'
+# gem 'haml'
+# gem 'activerecord'
+# gem 'sinatra-activerecord'
+# gem 'rake'
+# gem "bcrypt-ruby"

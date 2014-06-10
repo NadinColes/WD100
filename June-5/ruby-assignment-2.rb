@@ -28,6 +28,13 @@ def word_frequency(user_text)
 
 # loop over the has to see which has the highest value
 
+	# most_freq_word = freq_hash.first
+	# freq_hash.each do |word|
+	# 	if word[1] > most_freq_word[1]
+	# 	most_freq_word = word
+	# 	end
+	# end
+
 	freq_hash.values.max
 
 end

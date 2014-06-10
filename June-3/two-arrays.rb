@@ -6,15 +6,34 @@ Create a function that takes two arguments - both of them arrays. Inside of the 
 
 =end
 
+meal = [ :breakfast, :lunch, :dinner ]
+dish = [ "eggs", "salad", "cassoulet" ]
 
-def two_arrays
-	meal = [ :breakfast, :lunch, :dinner ]
-	dish = [ "eggs", "salad", "cassoulet" ]
-	return "#{meal}, #{dish}"
+meal.each do |item|
+	puts item 
+	dish.each do |item|
+		puts item
+	end
 end
 
-puts two_arrays
+my_hash = {:addone => 1}
+my_hash[:addtwo] = 2
 
+puts my_hash
+
+
+
+#achives the right output, but I don't totally understand:
+
+	# meal = [ :breakfast, :lunch, :dinner ]
+	# dish = [ "eggs", "salad", "cassoulet" ]
+
+	# combine = {}
+	# meal.each_with_index {|a,b|combine[a] = dish[b]}
+	# puts combine
+
+
+#another attempt
 
 
 	# meal = [ :breakfast, :lunch, :dinner ]
@@ -26,13 +45,12 @@ puts two_arrays
 	# puts "#{meal}: #{dish}"
 	# end
 
+#and another attempt
 
+	# def two_arrays
+	# 	meal = [ :breakfast, :lunch, :dinner ]
+	# 	dish = [ "eggs", "salad", "cassoulet" ]
+	# 	return "#{meal}, #{dish}"
+	# end
 
-	# meal = [ :breakfast, :lunch, :dinner ]
-	# dish = [ "eggs", "salad", "cassoulet" ]
-
-	# combine = {}
-	# meal.each_with_index {|a,b|combine[a] = dish[b]}
-	# puts combine
-
-
+	# puts two_arrays

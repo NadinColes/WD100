@@ -8,7 +8,10 @@ Create a function that takes a string and adds the phrase “Only in America!”
 
 
 def only_in_america(phrase)
-	phrase + " Only in America!"	
+	phrase + " Only in America!"
+
+#	"#{phrase}...Only in America"
+
 end
 
 puts "Enter a sentence and end it with punctuation:"

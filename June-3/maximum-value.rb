@@ -30,3 +30,19 @@ elsif (num2 > num1) & (num2 > num3)
 else
 	puts num3
 end
+
+
+def find_max(numbers_array)
+	max = numbers_array[0]
+	numbers_array.each do |number|
+		if number > max
+			max = number
+		end
+	end
+	max
+end
+
+puts find_max(1, 2, 3)
+
+
+

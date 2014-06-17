@@ -13,3 +13,7 @@ end
 get '/imagegallery' do
 	erb :imagegallery
 end
+
+#  layout.erb
+# <%= yield %>
+

@@ -25,9 +25,9 @@ end
 
 
 get '/success' do
-	erb :success
-
 	@user = current_user
+
+	erb :success
 end
 
 

@@ -3,10 +3,16 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 
-set :database, "sqlite3:project_database.sqlite3"
+configure(:development){ set :database, "sqlite3:project_database.sqlite3"}
+set :sessions, true
 
 require './models'
 
+def current_user
+	if session[:user_id]
+		@current_user = User.find(session[:user_id])
+	end
+end
 
 get '/' do
 	erb :Welcome
@@ -20,6 +26,8 @@ end
 
 get '/success' do
 	erb :success
+
+	@user = current_user
 end
 
 
@@ -38,5 +46,11 @@ post '/sign_in' do
 		redirect "/login_failed"
 	end
 end
+
+post '/sign_up' do
+	puts params[:user]
+	@user = User.create(params[:user])
+end
+
 
 
